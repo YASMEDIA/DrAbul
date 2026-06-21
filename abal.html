@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>د. عبدالعزيز أبل — استشاري تربوي وتعليمي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="abal.css">
+</head>
+<body>
+
+<!-- SKIP LINK -->
+<a href="#main-content" style="position:absolute;left:-9999px;top:0;z-index:9999;background:var(--accent);color:#fff;padding:0.5rem 1rem;border-radius:4px;font-weight:600;text-decoration:none;" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">
+  <span class="text-ar">تخطى إلى المحتوى</span>
+  <span class="text-en">Skip to content</span>
+</a>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-logo">
+    <span class="nav-logo-text text-ar">د. عبدالعزيز أبل</span>
+    <span class="nav-logo-text text-en">Dr. Abdulaziz Abal</span>
+  </div>
+  <ul class="nav-links" id="navLinks" role="list">
+    <li><a href="#problem"><span class="text-ar">التحديات</span><span class="text-en">Challenges</span></a></li>
+    <li><a href="#services"><span class="text-ar">الخدمات</span><span class="text-en">Services</span></a></li>
+    <li><a href="#about"><span class="text-ar">عن الدكتور</span><span class="text-en">About</span></a></li>
+    <li><a href="#achievements"><span class="text-ar">الإنجازات</span><span class="text-en">Achievements</span></a></li>
+    <li><a href="#booking-form"><span class="text-ar">تواصل معي</span><span class="text-en">Contact</span></a></li>
+  </ul>
+  <div class="nav-controls">
+    <button class="btn-toggle btn-lang" onclick="toggleLang()" aria-label="Toggle language">
+      <span class="text-ar">En</span>
+      <span class="text-en">ع</span>
+    </button>
+    <button class="btn-toggle" onclick="toggleTheme()" id="themeBtn" aria-label="Toggle dark mode">
+      <span id="themeIcon" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </span>
+      <span class="btn-label text-ar" id="themeLabel">الوضع الليلي</span>
+      <span class="btn-label text-en" id="themeLabelEn">Dark Mode</span>
+    </button>
+    <button class="nav-hamburger" id="navHamburger" onclick="toggleNav()" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="main-content" aria-label="Hero">
+  <h1 class="hero-headline">
+    <span class="text-ar">تحس صعب <em>تفهم طفلك؟</em></span>
+    <span class="text-en">Struggling to <em>understand your child?</em></span>
+  </h1>
+  <div class="hero-stage" aria-hidden="true">
+    <div class="orbit orbit-1"></div>
+    <div class="orbit orbit-2"></div>
+    <div class="orbit orbit-3"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-img-frame" id="heroFrame">
+      <img src="Personal Photo/DrabalAssest.png" alt="د. عبدالعزيز أبل — استشاري تربوي وتعليمي" />
+    </div>
+    <div class="hero-stat hero-stat-1">
+      <div class="hero-stat-inner">
+        <span class="hero-stat-number">500+</span>
+        <span class="hero-stat-label"><span class="text-ar">أسرة استفادت</span><span class="text-en">Families Helped</span></span>
+      </div>
+    </div>
+    <div class="hero-stat hero-stat-2">
+      <div class="hero-stat-inner">
+        <span class="hero-stat-number">240+</span>
+        <span class="hero-stat-label"><span class="text-ar">حالة تربوية</span><span class="text-en">Cases Handled</span></span>
+      </div>
+    </div>
+    <div class="hero-stat hero-stat-3">
+      <div class="hero-stat-inner">
+        <span class="hero-stat-number">+25</span>
+        <span class="hero-stat-label"><span class="text-ar">سنة خبرة</span><span class="text-en">Years Experience</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-name-card">
+    <p class="hero-doctor-name">
+      <span class="text-ar">د. عبدالعزيز أبل</span>
+      <span class="text-en">Dr. Abdulaziz Abal</span>
+    </p>
+    <p class="hero-doctor-title">
+      <span class="text-ar">استشاري تربوي وتعليمي ومؤثر تربوي</span>
+      <span class="text-en">Educational Consultant & Parenting Influencer</span>
+    </p>
+  </div>
+  <div class="hero-text">
+    <p class="hero-sub">
+      <span class="text-ar">ما أنتِ وحدك. أساعد الأهل يفهمون سلوك عيالهم ويبنون علاقة صحية وحلوة مع أسرتهم — بأساليب تربوية عصرية تنجح فعلاً.</span>
+      <span class="text-en">You're not alone. I help parents understand their children's behavior and build healthy, strong family relationships through modern, evidence-based educational methods.</span>
+    </p>
+    <button class="hero-cta" onclick="document.getElementById('booking-form').scrollIntoView({behavior:'smooth'})">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
+      <span class="text-ar">احجز استشارتك الحين</span>
+      <span class="text-en">Book a Consultation</span>
+    </button>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem" id="problem">
+  <div class="fade-in">
+    <div class="divider" aria-hidden="true"></div>
+    <h2 class="section-title"><span class="text-ar">تمر بهالمواقف مع طفلك؟</span><span class="text-en">Do any of these sound familiar?</span></h2>
+    <p class="section-sub"><span class="text-ar">كثير من الأهل يمرون بنفس الشيء — وهذا طبيعي. الخطوة الأولى إنك تعترف وتطلب المساعدة.</span><span class="text-en">Many parents face the same challenges — and that's completely normal. The first step is acknowledging them.</span></p>
+  </div>
+  <div class="problem-grid fade-in">
+
+    <div class="problem-card">
+      <div class="problem-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+      </div>
+      <p class="problem-title"><span class="text-ar">العناد الشديد</span><span class="text-en">Extreme Stubbornness</span></p>
+      <p class="problem-text"><span class="text-ar">طفلك يرفض كل شي وما يستاهل تتكلمين معه حتى في أبسط المواقف اليومية.</span><span class="text-en">Your child refuses everything you ask and makes even simple daily interactions a battle.</span></p>
+    </div>
+
+    <div class="problem-card">
+      <div class="problem-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <p class="problem-title"><span class="text-ar">الخوف والقلق المفرط</span><span class="text-en">Excessive Fear & Anxiety</span></p>
+      <p class="problem-text"><span class="text-ar">عند طفلك مخاوف ما تعرفين مصدرها تأثر على حياته الاجتماعية وتعلمه.</span><span class="text-en">Your child suffers from unfounded fears that affect their social life and daily learning.</span></p>
+    </div>
+
+    <div class="problem-card">
+      <div class="problem-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      </div>
+      <p class="problem-title"><span class="text-ar">اضطرابات السلوك</span><span class="text-en">Behavioral Issues</span></p>
+      <p class="problem-text"><span class="text-ar">نوبات غضب وعدوانية وما يقدر يركز — وأنتِ تعبانة منه كل يوم.</span><span class="text-en">Tantrums, aggression, and inability to focus — situations that drain your energy daily.</span></p>
+    </div>
+
+    <div class="problem-card">
+      <div class="problem-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+      </div>
+      <p class="problem-title"><span class="text-ar">إدمان الشاشات</span><span class="text-en">Screen Addiction</span></p>
+      <p class="problem-text"><span class="text-ar">ما تقدرين تاخذين التلفون منه بدون ما تصير ضجة بيتية كاملة.</span><span class="text-en">You can't take away the screen without triggering a full-blown family crisis.</span></p>
+    </div>
+
+    <div class="problem-card">
+      <div class="problem-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+      </div>
+      <p class="problem-title"><span class="text-ar">صعوبات دراسية</span><span class="text-en">Academic Difficulties</span></p>
+      <p class="problem-text"><span class="text-ar">طفلك يعاني بالمدرسة وما تدرين وين الخلل — تعليمي؟ سلوكي؟ عاطفي؟</span><span class="text-en">Your child struggles at school and you don't know if the issue is academic, behavioral, or emotional.</span></p>
+    </div>
+
+    <div class="problem-card">
+      <div class="problem-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="12" y2="13"/></svg>
+      </div>
+      <p class="problem-title"><span class="text-ar">ضعف التواصل</span><span class="text-en">Communication Breakdown</span></p>
+      <p class="problem-text"><span class="text-ar">تحسين إن طفلك ما يثق فيكِ بما يكفي ليحكيلك اللي يدور بداخله.</span><span class="text-en">You feel your child doesn't trust you enough to share what's going on inside.</span></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section>
+  <div class="solution-grid">
+    <div class="fade-in">
+      <div class="divider" aria-hidden="true"></div>
+      <h2 class="section-title"><span class="text-ar">كيف أساعدك تتجاوزين هالتحديات؟</span><span class="text-en">How I help you overcome these challenges</span></h2>
+      <div class="solution-points">
+        <div class="solution-point">
+          <div class="sp-num" aria-hidden="true">1</div>
+          <div>
+            <p class="sp-title"><span class="text-ar">التشخيص الدقيق</span><span class="text-en">Accurate Assessment</span></p>
+            <p class="sp-text"><span class="text-ar">نبدأ بجلسة شاملة نفهم فيها طبيعة طفلك ونحدد من وين يجي هالسلوك.</span><span class="text-en">We start with a comprehensive session to understand your child's nature and identify behavioral roots.</span></p>
+          </div>
+        </div>
+        <div class="solution-point">
+          <div class="sp-num" aria-hidden="true">2</div>
+          <div>
+            <p class="sp-title"><span class="text-ar">خطة مخصصة لأسرتك</span><span class="text-en">Personalized Family Plan</span></p>
+            <p class="sp-text"><span class="text-ar">ما في حلول جاهزة — كل خطة تتصمم خصيصاً لطفلك وبيئتك الأسرية.</span><span class="text-en">No one-size-fits-all — every plan is designed specifically for your child and unique family environment.</span></p>
+          </div>
+        </div>
+        <div class="solution-point">
+          <div class="sp-num" aria-hidden="true">3</div>
+          <div>
+            <p class="sp-title"><span class="text-ar">أدوات علمية حديثة</span><span class="text-en">Modern Scientific Tools</span></p>
+            <p class="sp-text"><span class="text-ar">أستخدم أحدث أساليب علم النفس التربوي وتقنيات السلوك المعرفي المدعومة بالبحث العلمي.</span><span class="text-en">I use the latest educational psychology methods and cognitive behavioral techniques backed by research.</span></p>
+          </div>
+        </div>
+        <div class="solution-point">
+          <div class="sp-num" aria-hidden="true">4</div>
+          <div>
+            <p class="sp-title"><span class="text-ar">متابعة مستمرة</span><span class="text-en">Continuous Support</span></p>
+            <p class="sp-text"><span class="text-ar">بجانبك خطوة بخطوة — تقييم دوري وتعديل في الخطة وجواب على كل أسئلتك.</span><span class="text-en">I'm with you every step — regular reviews, plan adjustments, and answers to all your questions.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="solution-visual fade-in" aria-hidden="true">
+      <div class="solution-visual-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><circle cx="12" cy="12" r="10"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </div>
+      <p class="solution-visual-text">
+        <span class="text-ar"><strong>منهج علمي</strong> × قلب دافئ = <strong>تغيير حقيقي</strong></span>
+        <span class="text-en"><strong>Evidence-Based</strong> × Warmth = <strong>Real Change</strong></span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="fade-in">
+    <div class="divider" aria-hidden="true"></div>
+    <h2 class="section-title"><span class="text-ar">شو أقدر أفيدك فيه؟</span><span class="text-en">What can I offer you?</span></h2>
+    <p class="section-sub"><span class="text-ar">خدمات مصممة لتناسب احتياجات كل أسرة — من الاستشارة الفردية لبرامج التطوير الكاملة.</span><span class="text-en">Services designed to fit all family needs — from individual consultations to comprehensive development programs.</span></p>
+  </div>
+  <div class="services-grid fade-in">
+
+    <div class="service-card">
+      <div class="service-icon-wrap" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </div>
+      <p class="service-title"><span class="text-ar">الاستشارة الفردية</span><span class="text-en">Individual Consultation</span></p>
+      <p class="service-desc"><span class="text-ar">جلسة خاصة نناقش فيها وضع طفلك وتاخذين توصيات علمية على طول ومخصصة لحالتك.</span><span class="text-en">A private session to discuss your child's situation and receive immediate, personalized scientific recommendations.</span></p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon-wrap" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <p class="service-title"><span class="text-ar">برنامج التربية الواعية</span><span class="text-en">Conscious Parenting Program</span></p>
+      <p class="service-desc"><span class="text-ar">برنامج مكثف 8 أسابيع يعطيك أدوات تربوية تفيدك طول عمرك.</span><span class="text-en">An intensive 8-week program that gives you lifelong parenting tools.</span></p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon-wrap" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <p class="service-title"><span class="text-ar">ورش العمل الجماعية</span><span class="text-en">Group Workshops</span></p>
+      <p class="service-desc"><span class="text-ar">ورش تفاعلية تتعلمين فيها مع أهل ثانيين وتبنين شبكة دعم حقيقية.</span><span class="text-en">Interactive workshops where you learn alongside other parents and build a real community support network.</span></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-img-wrap fade-in">
+      <div class="about-img">
+        <img src="Personal Photo/assestdr2.png" alt="د. عبدالعزيز ابل" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;" />
+      </div>
+      <div class="about-cred">
+        <div class="cred-item"><span class="cred-dot" aria-hidden="true"></span><span class="text-ar">دكتوراه في المناهج وطرق التدريس — FIU، أمريكا 2012</span><span class="text-en">PhD Curriculum & Instruction — FIU, USA 2012</span></div>
+        <div class="cred-item"><span class="cred-dot" aria-hidden="true"></span><span class="text-ar">ماجستير TESOL — Surrey University، المملكة المتحدة 2003</span><span class="text-en">MA TESOL — Surrey University, UK 2003</span></div>
+        <div class="cred-item"><span class="cred-dot" aria-hidden="true"></span><span class="text-ar">عضو جمعية البحوث التربوية الأمريكية AERA</span><span class="text-en">Member — American Educational Research Assoc. (AERA)</span></div>
+      </div>
+    </div>
+    <div class="fade-in">
+      <div class="divider" aria-hidden="true"></div>
+      <h2 class="section-title"><span class="text-ar">د. عبدالعزيز ابل</span><span class="text-en">Dr. Abdulaziz Abal</span></h2>
+      <p style="color:var(--text-secondary);margin-bottom:1.5rem;font-weight:300;line-height:1.9;">
+        <span class="text-ar">دكتوراه في المناهج وطرق التدريس باستخدام التكنولوجيا من الولايات المتحدة الأمريكية 2012، وخبرة أكثر من 25 سنة في التعليم والإرشاد التربوي في الكويت وأمريكا والبحرين. أؤمن إيمان عميق بأن لكل طفل إمكانات تنتظر شخصاً يكتشفها بالطريقة الصح.</span>
+        <span class="text-en">PhD in Curriculum & Instruction using Technology from the USA (2012), with over 25 years in education and parenting consultancy across Kuwait, the USA, and Bahrain. I deeply believe every child has unique potential waiting to be discovered the right way.</span>
+      </p>
+      <p style="color:var(--text-secondary);margin-bottom:2rem;font-weight:300;line-height:1.9;">
+        <span class="text-ar">مؤسس مركز ريتش للتعليم منذ 2014 وحضانة هيروز منذ 2019، وقدّمت ورش عمل للأهل والمعلمين في الكويت والبحرين والإمارات والولايات المتحدة. تمت استضافتي في قناة العربية وMBC وسكاي نيوز العربية وتلفزيون الكويت وتلفزيون الراي وإذاعة مارينا FM.</span>
+        <span class="text-en">Founder of Reach Education Center (2014) and Heroes Nursery (2019). I've delivered workshops for parents and teachers in Kuwait, Bahrain, UAE, and the USA. Featured on Al Arabiya, MBC, Sky News Arabia, Kuwait TV, Al Rai TV, and Marina FM.</span>
+      </p>
+      <div class="about-stats">
+        <div class="about-stat"><div class="stat-num">+25</div><div class="stat-label"><span class="text-ar">سنة خبرة</span><span class="text-en">Years Experience</span></div></div>
+        <div class="about-stat"><div class="stat-num">+500</div><div class="stat-label"><span class="text-ar">أسرة</span><span class="text-en">Families</span></div></div>
+        <div class="about-stat"><div class="stat-num">+6</div><div class="stat-label"><span class="text-ar">قنوات تلفزيونية</span><span class="text-en">TV Channels</span></div></div>
+        <div class="about-stat"><div class="stat-num">+6</div><div class="stat-label"><span class="text-ar">دول عمل فيها</span><span class="text-en">Countries</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ACHIEVEMENTS -->
+<section class="achievements fade-in" id="achievements">
+  <div style="text-align:start;">
+    <span class="section-label"><span class="text-ar">مسيرة النجاح</span><span class="text-en">Journey of Success</span></span>
+    <div class="divider" style="margin-inline-end:auto;margin-inline-start:0;" aria-hidden="true"></div>
+    <h2 class="section-title"><span class="text-ar">إنجازات أفتخر فيها</span><span class="text-en">Milestones I'm Proud Of</span></h2>
+    <p class="section-sub" style="max-width:560px;">
+      <span class="text-ar">ساهمت في تأسيس مشاريع تربوية تخدم الأسرة العربية وتنمّي جيل واعي.</span>
+      <span class="text-en">I co-founded educational projects that serve Arab families and build a conscious generation.</span>
+    </p>
+  </div>
+  <div class="achievements-timeline">
+
+    <div class="achievement-item">
+      <a href="https://reach-education.vercel.app" target="_blank" rel="noopener noreferrer" class="achievement-card">
+        <img src="Logos/education.svg" alt="Reach Education" class="achievement-logo" loading="lazy" />
+        <div class="achievement-name"><span class="text-ar">ريتش للتعليم</span><span class="text-en">Reach Education</span></div>
+        <p class="achievement-desc"><span class="text-ar">مركز تعليمي علاجي يقدم خدمات النطق والسلوك والإرشاد التربوي لأطفال صعوبات التعلم.</span><span class="text-en">A specialized therapeutic education center offering speech, behavioral, and educational support for children with learning difficulties.</span></p>
+        <span class="achievement-visit-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          Visit Now
+        </span>
+      </a>
+      <div class="achievement-year">
+        <div class="year-dot" aria-hidden="true"></div>
+        <span class="year-label">2014</span>
+      </div>
+      <div class="achievement-empty"></div>
+    </div>
+
+    <div class="achievement-item">
+      <div class="achievement-empty"></div>
+      <div class="achievement-year">
+        <div class="year-dot" style="background:var(--highlight);box-shadow:0 0 0 2px var(--highlight);" aria-hidden="true"></div>
+        <span class="year-label" style="color:var(--highlight);">2019</span>
+      </div>
+      <a href="https://heroes-academy-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="achievement-card">
+        <img src="Logos/heros.svg" alt="Heroes Academy" class="achievement-logo" loading="lazy" />
+        <div class="achievement-name"><span class="text-ar">هيروز أكاديمي</span><span class="text-en">Heroes Academy</span></div>
+        <p class="achievement-desc"><span class="text-ar">حضانة ثنائية اللغة بالكويت تجمع بين التعليم المبكر وتطوير القيادة، وتكتشف مواهب كل طفل الفطرية.</span><span class="text-en">A bilingual nursery in Kuwait combining early childhood education with leadership development to discover each child's natural talents.</span></p>
+        <span class="achievement-visit-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          Visit Now
+        </span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="contact">
+  <div class="fade-in">
+    <h2 class="section-title"><span class="text-ar">طفلك يستاهل أحسن نسخة منك</span><span class="text-en">Your child deserves the best version of you</span></h2>
+    <p class="section-sub"><span class="text-ar">ما تأجل. الخطوة الأولى نحو أسرة سعيدة تبدأ بمكالمة وحدة.</span><span class="text-en">Don't wait any longer. The first step toward a happier family starts with a single call.</span></p>
+    <button class="cta-white" onclick="document.getElementById('booking-form').scrollIntoView({behavior:'smooth'})">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12.16a19.79 19.79 0 01-3.07-8.67A2 2 0 013.41 1.5h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9a16 16 0 006.29 6.29l.75-.75a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      <span class="text-ar">احجز استشارتك الحين</span>
+      <span class="text-en">Book Your Consultation Now</span>
+    </button>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact-form-section fade-in" id="booking-form">
+  <div style="text-align:center;">
+    <span class="section-label"><span class="text-ar">تواصل معنا</span><span class="text-en">Get in Touch</span></span>
+    <div class="divider" style="margin:0 auto 1.5rem;" aria-hidden="true"></div>
+    <h2 class="section-title"><span class="text-ar">احجز استشارتك الحين</span><span class="text-en">Book Your Consultation</span></h2>
+    <p class="section-sub" style="margin:0 auto 0;"><span class="text-ar">حط بياناتك وراح يتواصل معك فريقنا في أقرب وقت.</span><span class="text-en">Submit your details and our team will reach out to you shortly.</span></p>
+  </div>
+  <div class="contact-form-wrap">
+    <form id="contactForm" action="https://formsubmit.co/info@drabal.com" method="POST" onsubmit="handleFormSubmit(event)" novalidate>
+      <input type="hidden" name="_subject" value="طلب استشارة جديد - موقع د. عبدالعزيز ابل">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="">
+      <div class="form-group">
+        <label for="nameInput"><span class="text-ar">الاسم الكامل *</span><span class="text-en">Full Name *</span></label>
+        <input id="nameInput" type="text" name="name" required autocomplete="name" placeholder="أدخل اسمك الكامل / Enter your full name" />
+      </div>
+      <div class="form-group">
+        <label for="emailInput"><span class="text-ar">البريد الإلكتروني *</span><span class="text-en">Email Address *</span></label>
+        <input id="emailInput" type="email" name="email" required autocomplete="email" placeholder="example@email.com" />
+      </div>
+      <div class="form-group">
+        <label for="phoneInput"><span class="text-ar">رقم الهاتف *</span><span class="text-en">Phone Number *</span></label>
+        <input id="phoneInput" type="tel" name="phone" required autocomplete="tel" placeholder="+966 5x xxx xxxx" />
+      </div>
+      <button type="submit" class="form-submit-btn" id="submitBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        <span class="text-ar">أرسل طلبك</span>
+        <span class="text-en">Submit Request</span>
+      </button>
+    </form>
+    <div class="form-success" id="formSuccess" role="alert">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      <span class="text-ar">تم! سنتواصل معك قريباً</span>
+      <span class="text-en">Request sent successfully! We'll be in touch soon.</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <p class="footer-copy">
+      <span class="text-ar">© 2025 د. عبدالعزيز أبل — جميع الحقوق محفوظة</span>
+      <span class="text-en">© 2025 Dr. Abdulaziz Abal — All rights reserved</span>
+    </p>
+    <a href="https://yasmedia.com" target="_blank" rel="noopener noreferrer" class="yas-credit" dir="ltr">
+      <span class="yas-credit-text">Designed &amp; Developed by</span>
+      <svg class="yas-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.83 87.37"><path d="M180.77,87.08c-.32.19-.68.29-1.05.29h-28.8c-.72,0-1.4-.37-1.78-.98,0,0-.04-.04-.05-.07-.02-.02-.03-.05-.04-.08l-31.06-53.8-.19-.33c-.4-.56-1.04-.9-1.73-.9-.7,0-1.35.35-1.74.93-.04.06-.08.12-.11.19l-31.13,53.92s-.03.08-.06.11c-.18.3-.43.55-.73.72-.32.19-.68.29-1.05.29h-28.8c-1.16,0-2.1-.96-2.09-2.13,0-.34.09-.68.25-.99l13.15-22.72c.06-.08.11-.17.15-.26.52-1.04.09-2.3-.95-2.82-.29-.14-.61-.22-.93-.22h-28.8c-.72,0-1.4-.37-1.78-.98l-.05-.07s0-.05,0-.08L.28,3.16C-.3,2.15.05.86,1.06.28,1.38.09,1.74,0,2.11,0h28.8c.72,0,1.39.37,1.77.98.02.02.04.04.05.07.02.02.03.05.04.08l31.08,53.83c.04.09.1.19.16.27h0c.66.96,1.98,1.2,2.93.54.21-.15.39-.33.54-.54.04-.06.07-.12.1-.19L98.7,1.12s.03-.08.05-.11c.18-.3.44-.55.74-.73.32-.19.68-.28,1.05-.28h28.8c1.16,0,2.1.95,2.1,2.11,0,.35-.09.7-.26,1.01l-13.16,22.7c-.05.08-.1.16-.15.24-.52,1.04-.11,2.3.93,2.82.3.15.63.23.96.23h28.8c.72,0,1.39.37,1.77.98.02.02.04.04.05.07.02.02.03.05.04.08l31.13,53.96c.59,1,.25,2.29-.75,2.88,0,0-.01,0-.02.01Z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<a href="https://wa.me/96599973224" target="_blank" rel="noopener noreferrer" class="whatsapp-fab" aria-label="تواصل عبر واتساب / Contact via WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <span class="whatsapp-fab-label">
+    <span class="text-ar">واتساب</span>
+    <span class="text-en">WhatsApp</span>
+  </span>
+</a>
+
+<script src="abal.js"></script>
+</body>
+</html>

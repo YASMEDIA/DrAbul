@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "abal-preview",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["/tmp/serve_abal.py"],
+      "port": 8765
+    }
+  ]
+}
