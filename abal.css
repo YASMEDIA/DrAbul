@@ -133,11 +133,18 @@ html[lang="ar"] .hero-logo { height: 82px; }
   font-size: clamp(1.05rem, 2vw, 1.3rem); color: var(--accent);
   font-weight: 500; margin-bottom: 1.6rem; max-width: 30ch;
 }
-.hero-name {
-  font-size: 1rem; color: var(--text-muted); font-weight: 500;
-  letter-spacing: 0.04em; margin-bottom: 2.4rem;
+.hero-role {
+  font-size: 1.02rem; color: var(--text-primary); font-weight: 600;
+  margin-bottom: 1.6rem;
   padding-inline-start: 1rem; border-inline-start: 3px solid var(--accent);
 }
+.hero-creds { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; margin: 0 0 2.4rem; }
+.hero-creds li {
+  display: flex; align-items: flex-start; gap: 0.65rem;
+  font-size: 0.92rem; color: var(--text-secondary); font-weight: 300; line-height: 1.6;
+}
+.hero-creds li strong { color: var(--text-primary); font-weight: 600; }
+.hero-creds svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--accent); margin-top: 2px; }
 .hero-cta {
   display: inline-flex; align-items: center; gap: 10px;
   background: var(--accent); color: #fff; padding: 0.95rem 2rem;
@@ -294,7 +301,8 @@ html[lang="ar"] .nav-logo-text { font-family: 'Noto Naskh Arabic', serif; }
   .hero-inner { grid-template-columns: 1fr; gap: 1rem; text-align: center; }
   .hero-content { order: 2; }
   .hero-logo, html[lang="ar"] .hero-logo { margin-inline: auto; }
-  .hero-name { display: inline-block; text-align: start; }
+  .hero-role { display: inline-block; }
+  .hero-creds { max-width: 440px; margin-inline: auto; text-align: start; }
   .hero-portrait { order: 1; }
   .hero-portrait img { max-width: 300px; }
   .story-block, .story-block:nth-child(even) { grid-template-columns: 1fr; gap: 1.6rem; }
